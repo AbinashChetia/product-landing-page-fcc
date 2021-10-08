@@ -95,6 +95,7 @@ nav {
     font-weight: 400;
     width: 100%;
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
@@ -188,8 +189,8 @@ nav > ul {
 
 @media (max-width: 550px) {
     #features {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     #features .icon {
@@ -197,7 +198,7 @@ nav > ul {
     }
 }
 
-.features .desc {
+#features .desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
