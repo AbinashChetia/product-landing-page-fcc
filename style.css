@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #eee;
+    background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,7 +18,7 @@ li {
 }
 
 a {
-    color: #000;
+    color: white;
     text-decoration: none;
 }
 
@@ -47,12 +47,13 @@ a {
 header {
     position: fixed;
     top: 0;
-    min-height: 75px;
+    min-height: 60px;
     padding: 0px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #eee;
+    background-color: rgb(47, 2, 99);
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -150,11 +151,14 @@ nav > ul {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: rgb(252, 227, 0);
+    background-color: rgb(47, 2, 99);
+    color: white;
 }
 
 #head input[type='submit']:hover {
-    background-color: orange;
+    background-color: white;
+    border: 1px solid rgb(47, 2, 99);
+    color: rgb(47, 2, 99);
     transition: background-color 1s;
 }
 
@@ -174,7 +178,7 @@ nav > ul {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: darkgoldenrod;
+    color: rgb(47, 2, 99);
 }
 
 @media (max-width: 550px) {
@@ -237,9 +241,10 @@ nav > ul {
 }
 
 .product > .level {
-    background-color: #ddd;
-    color: #000;
+    background-color: rgb(47, 2, 99);
+    color: white;
     padding: 15px 0;
+    width: 100%;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -259,12 +264,50 @@ nav > ul {
 .product > button {
     border: 0;
     margin: 15px 0;
-    background-color: rgb(252, 227, 0);
+    background-color: rgb(47, 2, 99);
+    color: white;
     font-weight: 400;
 }
 
 .product > button:hover {
-    background-color: orange;
+    background-color: white;
+    color: rgb(47, 2, 99);
+    border: 1px solid rgb(47, 2, 99);
     transition: background-color 1s;
 }
 
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(47, 2, 99);
+    padding: 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: white;
+}
